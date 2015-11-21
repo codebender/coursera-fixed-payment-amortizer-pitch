@@ -1,2 +1,3 @@
-# coursera-fixed-payment-amortizer-pitch
-Johns Hopkins - Developing Data Products Course Project - Slidify Pitch
+# Johns Hopkins - Developing Data Products Course Project - Slidify Pitch
+
+View Pitch at http://codebender.github.io/coursera-fixed-payment-amortizer-pitch
