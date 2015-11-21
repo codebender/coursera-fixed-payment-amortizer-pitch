@@ -364,5 +364,9 @@ pre code {
 .title-slide hgroup > h2 {
   color: #535E43 ;  /* ; #EF5150*/
 }
-
-
+em {
+  font-style: italic
+}
+strong {
+  font-weight: bold;
+}
