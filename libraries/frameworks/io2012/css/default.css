@@ -742,7 +742,6 @@ table {
 }
 /* line 515, ../scss/default.scss */
 table tr > td:first-child, table th {
-  font-weight: 600;
   color: #515151;
 }
 /* line 520, ../scss/default.scss */
