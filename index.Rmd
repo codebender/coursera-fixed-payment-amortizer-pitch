@@ -30,3 +30,32 @@ remember, than $263.81.
 _Fixed Loan Payment Amortizer_ is a fixed payment amortization calculator, that
 allow the consumer to select the loan amount, interest rate, & monthly payment 
 they want to make adjustable in increaments of $25.
+
+---
+
+## Features
+#### Calculations
+Loan Term, Finance Change (Total interest paid over the life of the loan), Total of Payments
+
+#### Plot
+```{r echo=FALSE, results='hide'}
+load("example.Rda")
+```
+```{r fig.height=4}
+ggplot(schedule, aes(x=period, y=endingPrincipalBalance)) +
+    geom_bar(stat="identity") +
+    labs(list(title = "Loan Remaining Balance over time",
+      x = "Number of payment period", y = "Remaining Balance (Dollars)"))
+```
+
+---
+
+## Features
+#### Amortization Table
+```{r echo=FALSE, results='hide'}
+load("example.Rda")
+```
+```{r}
+head(schedule, n=10)
+```
+

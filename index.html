@@ -72,6 +72,135 @@ they want to make adjustable in increaments of $25.</p>
   <!-- Presenter Notes -->
 </slide>
 
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Features</h2>
+  </hgroup>
+  <article data-timings="">
+    <h4>Calculations</h4>
+
+<p>Loan Term, Finance Change (Total interest paid over the life of the loan), Total of Payments</p>
+
+<h4>Plot</h4>
+
+<pre><code class="r">ggplot(schedule, aes(x=period, y=endingPrincipalBalance)) +
+    geom_bar(stat=&quot;identity&quot;) +
+    labs(list(title = &quot;Loan Remaining Balance over time&quot;,
+      x = &quot;Number of payment period&quot;, y = &quot;Remaining Balance (Dollars)&quot;))
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Features</h2>
+  </hgroup>
+  <article data-timings="">
+    <h4>Amortization Table</h4>
+
+<pre><code class="r">head(schedule, n=10)
+</code></pre>
+
+<table><thead>
+<tr>
+<th align="right">period</th>
+<th align="right">beginningPrincipalBalance</th>
+<th align="right">interestPayment</th>
+<th align="right">principalPayment</th>
+<th align="right">totalPayment</th>
+<th align="right">endingPrincipalBalance</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="right">1</td>
+<td align="right">5000.00</td>
+<td align="right">11.82</td>
+<td align="right">463.18</td>
+<td align="right">475</td>
+<td align="right">4536.82</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">4536.82</td>
+<td align="right">10.72</td>
+<td align="right">464.28</td>
+<td align="right">475</td>
+<td align="right">4072.54</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">4072.54</td>
+<td align="right">9.62</td>
+<td align="right">465.38</td>
+<td align="right">475</td>
+<td align="right">3607.16</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">3607.16</td>
+<td align="right">8.52</td>
+<td align="right">466.48</td>
+<td align="right">475</td>
+<td align="right">3140.68</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">3140.68</td>
+<td align="right">7.42</td>
+<td align="right">467.58</td>
+<td align="right">475</td>
+<td align="right">2673.10</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">2673.10</td>
+<td align="right">6.32</td>
+<td align="right">468.68</td>
+<td align="right">475</td>
+<td align="right">2204.42</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">2204.42</td>
+<td align="right">5.21</td>
+<td align="right">469.79</td>
+<td align="right">475</td>
+<td align="right">1734.63</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">1734.63</td>
+<td align="right">4.10</td>
+<td align="right">470.90</td>
+<td align="right">475</td>
+<td align="right">1263.73</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">1263.73</td>
+<td align="right">2.99</td>
+<td align="right">472.01</td>
+<td align="right">475</td>
+<td align="right">791.72</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">791.72</td>
+<td align="right">1.87</td>
+<td align="right">473.13</td>
+<td align="right">475</td>
+<td align="right">318.59</td>
+</tr>
+</tbody></table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
     <slide class="backdrop"></slide>
   </slides>
   <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
@@ -86,6 +215,18 @@ they want to make adjustable in increaments of $25.</p>
       <a href="#" target="_self" rel='tooltip' 
         data-slide=2 title='Solution'>
          2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Features'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Features'>
+         4
       </a>
     </li>
   </ul>
